@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "nhap";
+}
+
+<h2>nhap</h2>
+
+<form method="post" action="/QLNV/save">
+    <table>
+        <tr>
+            <td>
+                <label>Mã nhân viên </label>
+                <input type="text" name="manv" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Họ tên </label>
+                <input type="text" name="ten" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Địa chỉ </label>
+                <!--<select name="diachi" required>
+        <option value="">-- Chọn Địa Chỉ --</option>
+        <option value="Hải Phòng">Hải Phòng</option>
+        <option value="Hà Nội">Hà Nội</option>
+        <option value="Quảng Ninh">Quảng Ninh</option>
+    </select>-->
+                <input type="radio" id="hai-phong" name="diachi" value="Hải Phòng" required />
+                <label for="hai-phong">Hải Phòng   </label>
+
+                <input type="radio" id="ha-noi" name="diachi" value="Hà Nội" required />
+                <label for="ha-noi">Hà Nội  </label>
+
+                <input type="radio" id="quang-ninh" name="diachi" value="Quảng Ninh" required />
+                <label for="quang-ninh">Quảng Ninh</label>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Số  ngày làm </label>
+                <input type="text" name="songaylam" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Lương ngày </label>
+                <input type="text" name="luongngay" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Nhập" />
+                <input type="reset" value="Xóa" />
+            </td>
+        </tr>
+    </table>
+
+</form>

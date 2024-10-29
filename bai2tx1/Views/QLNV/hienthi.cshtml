@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "hienthi";
+}
+
+<h2>hienthi</h2>
+
+<h1>Danh sách 1 </h1>
+
+<table>
+    <tr>
+        <th>Mã nhân viên</th>
+        <th>Họ tên</th>
+        <th>Địa chỉ</th>
+        <th>Số ngày làm</th>
+        <th>Lương ngày</th>
+        <th>Tiền lương</th>
+    </tr>
+    @foreach (var x in ViewBag.ds1)
+    {
+        <tr>
+            <td>
+                @x.manv
+            </td>
+            <td>
+                @x.ten
+            </td>
+            <td>
+                @x.diachi
+            </td>
+            <td>
+                @x.songaylam
+            </td>
+            <td>
+                @x.luongngay
+            </td>
+            <td>
+                @x.tongluong
+            </td>
+        </tr>
+    }
+</table>
+
+<h1>Danh sách 2 </h1>
+<table>
+    <tr>
+        <th>Mã nhân viên</th>
+        <th>Họ tên</th>
+        <th>Địa chỉ</th>
+        <th>Số ngày làm</th>
+        <th>Lương ngày</th>
+        <th>Tiền lương</th>
+    </tr>
+    @foreach (var x in ViewBag.ds1)
+    {
+        <tr>
+            <td>
+                @x.manv
+            </td>
+            <td>
+                @x.ten
+            </td>
+            <td>
+                @x.diachi
+            </td>
+            <td>
+                @x.songaylam
+            </td>
+            <td>
+                @x.luongngay
+            </td>
+            <td>
+                @x.tongluong
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "save";
+}
+
+<h2>save</h2>
+
+
+<table>
+    <tr>
+        <th>Mã nhân viên</th>
+        <th>Họ tên</th>
+        <th>Địa chỉ</th>
+        <th>Số ngày làm</th>
+        <th>Lương ngày</th>
+        <th>Tiền lương</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>
+                @x.manv
+            </td>
+            <td>
+                @x.ten
+            </td>
+            <td>
+                @x.diachi
+            </td>
+            <td>
+                @x.songaylam
+            </td>
+            <td>
+                @x.luongngay
+            </td>
+            <td>
+                @x.tongluong
+            </td>
+        </tr>
+    }
+</table>
